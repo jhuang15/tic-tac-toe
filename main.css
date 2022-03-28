@@ -1,11 +1,61 @@
 
-table { 
-    width: 50%;
-    border-style: solid;
-    margin: auto;
+html, body {
+    height: 100%;
+}
+
+body{ 
+    background-color: #6F0299;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #CAFF4F;
+}
+header{
+    color: lightgray;
+    font-size: 5vmin;
 
 }
-th {
-    height: 10rem;
-    border-style: solid;
+h1 {
+    font-size: 3vmin;
+
 }
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2vmin;
+    cursor: pointer;
+
+}
+
+.board {
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+
+}
+
+.cell {
+    border-bottom: 1vmin solid #CAFF4F;
+    border-right: 1vmin solid #CAFF4F;
+    font-size: 10vmin;
+    text-align: center;
+    line-height: 12vmin;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*---:nth-child() selector matches every element that is the nth child of its parent ---*/
+.cell:nth-child(3n){ 
+    border-right: none;
+}
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+.cell.highlight {
+     background-color: #36004b;
+
+}
+
