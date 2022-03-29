@@ -10,21 +10,34 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #CAFF4F;
+    color: #E0DFDA;
 }
 header{
-    color: lightgray;
-    font-size: 5vmin;
+    color: white;
+    font-size: 60px;
 
 }
 h1 {
-    font-size: 3vmin;
+    font-size: 20px;
+    margin: 20px;
 
 }
 button {
     font-family: 'Poppins', sans-serif;
     font-size: 2.2vmin;
     cursor: pointer;
+    background-color: #CAFF4F; 
+    border: none;
+    margin: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+     display: inline-block;
+
+}
+button:hover {
+    background-color: #677A35;
+    color: white;
 
 }
 
